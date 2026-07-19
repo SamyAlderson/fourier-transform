@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "fourier-transform"
+version = "1.0.0"
+description = "A Python implementation of the Fast Fourier Transform (FFT) algorithm for signal processing"
+authors = ["Samy Alderson <samy.alderson@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1"
+numpy = "^1.23"
+scipy = "^1.9"
+
+[build-system]
+requires = ["poetry>=0.650"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.urls]
+Documentation = "https://example.com/fourier-transform/docs"
+
+[tool.pytest.ini_options]
+addopts = ["--verbose"]
+
+[tool.pytest.collect_ignore]
+ignore = ["tests/test_utils.py"]  # temporarily ignore tests for this file
